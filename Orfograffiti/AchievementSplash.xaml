@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Orfograffiti.AchievementSplash"
+             Title="AchievementSplash">
+    <Grid>
+        <Image 
+            x:Name="fon"
+            Aspect="AspectFill"
+            Source="whitefon.jfif"
+            Opacity="0.5"/>
+            <ScrollView x:Name="scroll" IsEnabled="False">
+            <VerticalStackLayout>
+                <Label 
+                    x:Name="ultratitle"
+                    Text="Достижение получено!"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"
+                    Margin="10,30,10,10" />
+                <Label 
+                    x:Name="title"
+                    Text="?"
+                    Opacity="0"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"
+                    Margin="10,10,10,0"/>
+                <Frame x:Name="container" BorderColor="Black" WidthRequest="250" HeightRequest="250" BackgroundColor="White" Margin="0,20,0,0">
+                    <Image 
+                        x:Name="img"
+                        Source="coin.png"
+                        WidthRequest="170"
+                        RotationY="181"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"/>
+                </Frame>
+                <Border x:Name="condbor" Margin="30" Stroke="Black" Opacity="0">
+                    <Label 
+                        x:Name="subtitle2"
+                        Text="Текущий опыт"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        Margin="0,10" />
+                </Border>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

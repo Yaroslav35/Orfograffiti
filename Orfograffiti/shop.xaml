@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Orfograffiti.shop"
+             Title="">
+    <Grid>
+        <Image 
+            x:Name="fon"
+            Aspect="AspectFill"
+            Source="whitefon.jfif"
+            Opacity="0.5"/>
+        <ScrollView>
+            <VerticalStackLayout>
+                <Label 
+            Text="Магазин"
+            FontSize="32"
+            FontAttributes="Bold"
+            Margin="15,0,0,0"/>
+                <HorizontalStackLayout Margin="15,15,0,0">
+                    <Label 
+                Text="Букоины:"
+                FontSize="30"
+                FontAttributes="Bold" />
+                    <Label 
+                x:Name="bucoinslbl"
+                Text="999"
+                FontSize="30"
+                VerticalTextAlignment="Center"
+                Margin="10,0,0,0"/>
+                    <Image 
+                Source="coin.png"
+                WidthRequest="30"
+                Margin="7,0,0,0"/>
+                </HorizontalStackLayout>
+                <Label 
+            Text="Шрифты"
+            FontSize="30"
+            FontAttributes="Bold"
+            Margin="15,50,0,20"/>
+                <FlexLayout Direction="Row" JustifyContent="SpaceAround" Wrap="Wrap">
+                    <VerticalStackLayout WidthRequest="150" Margin="0,5">
+                        <Frame x:Name="font1" HeightRequest="100">
+                            <Label 
+                        Text="Аб"
+                        FontSize="48"
+                        HorizontalOptions="Center"/>
+                        </Frame>
+                        <Label 
+                    Text="OpenSans"
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    FontSize="24"
+                    Margin="0,10,0,0"
+                    FontAttributes="Bold"/>
+                        <HorizontalStackLayout HorizontalOptions="Center">
+                            <HorizontalStackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="classicTapped"/>
+                            </HorizontalStackLayout.GestureRecognizers>
+                            <Label 
+                        x:Name="classicstate"
+                        Text="1000"
+                        FontSize="18"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout WidthRequest="150" Margin="0,5">
+                        <Frame x:Name="font2" HeightRequest="100">
+                            <Label 
+                        Text="Аб"
+                        FontSize="48"
+                        FontFamily="Impact"
+                        HorizontalOptions="Center"/>
+                        </Frame>
+                        <Label 
+                    Text="Impact"
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    FontSize="24"
+                    Margin="0,10,0,0"
+                    FontAttributes="Bold"/>
+                        <HorizontalStackLayout HorizontalOptions="Center">
+                            <HorizontalStackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="impactTapped"/>
+                            </HorizontalStackLayout.GestureRecognizers>
+                            <Label 
+                        x:Name="impactstate"
+                        Text="1000"
+                        FontSize="18"/>
+                            <Image 
+                        x:Name="impactcoin"
+                        Source="coin.png" 
+                        WidthRequest="20"
+                        VerticalOptions="Center"
+                        Margin="5,0,0,0"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout WidthRequest="150" Margin="0,5">
+                        <Frame x:Name="font3" HeightRequest="100">
+                            <Label 
+                        Text="Аб"
+                        FontSize="48"
+                        FontFamily="timesnewroman"
+                        HorizontalOptions="Center" />
+                        </Frame>
+                        <Label 
+                    Text="Times New Roman"
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    FontSize="16"
+                    Margin="0,10,0,0"
+                    FontAttributes="Bold"/>
+                        <HorizontalStackLayout HorizontalOptions="Center">
+                            <HorizontalStackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="timesnewromanTapped"/>
+                            </HorizontalStackLayout.GestureRecognizers>
+                            <Label 
+                        x:Name="timesnewromanstate"
+                        Text="1000"
+                        FontSize="18"/>
+                            <Image 
+                        x:Name="timesnewromancoin"
+                        Source="coin.png" 
+                        WidthRequest="20"
+                        VerticalOptions="Center"
+                        Margin="5,0,0,0"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout WidthRequest="150" Margin="0,5">
+                        <Frame x:Name="font4" HeightRequest="100">
+                            <Label 
+                        Text="Аб"
+                        FontSize="48"
+                        FontFamily="comicsans"
+                        HorizontalOptions="Center" />
+                        </Frame>
+                        <Label 
+                    Text="Comic Sans"
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    FontSize="24"
+                    Margin="0,10,0,0"
+                    FontAttributes="Bold"/>
+                        <HorizontalStackLayout HorizontalOptions="Center">
+                            <HorizontalStackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="comicsansTapped"/>
+                            </HorizontalStackLayout.GestureRecognizers>
+                            <Label 
+                        x:Name="comicsansstate"
+                        Text="1000"
+                        FontSize="18"/>
+                            <Image 
+                        x:Name="comicsanscoin"
+                        Source="coin.png" 
+                        WidthRequest="20"
+                        VerticalOptions="Center"
+                        Margin="5,0,0,0"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout WidthRequest="150" Margin="0,5">
+                        <Frame x:Name="font5" HeightRequest="100">
+                            <Label 
+                        Text="Аб"
+                        FontSize="48"
+                        FontFamily="pixel"
+                        HorizontalOptions="Center"/>
+                        </Frame>
+                        <Label 
+                    Text="Pixel"
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    FontSize="24"
+                    Margin="0,10,0,0"
+                    FontAttributes="Bold"/>
+                        <HorizontalStackLayout HorizontalOptions="Center">
+                            <HorizontalStackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="pixelTapped"/>
+                            </HorizontalStackLayout.GestureRecognizers>
+                            <Label 
+                        x:Name="pixelstate"
+                        Text="1000"
+                        FontSize="18"/>
+                            <Image 
+                        x:Name="pixelcoin"
+                        Source="coin.png" 
+                        WidthRequest="20"
+                        VerticalOptions="Center"
+                        Margin="5,0,0,0"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </FlexLayout>
+                <Label 
+                    Text="Темы"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    Margin="15,50,0,20"/>
+                <FlexLayout Direction="Row" JustifyContent="SpaceAround" Wrap="Wrap">
+                    <VerticalStackLayout>
+                        <Frame BackgroundColor="White" WidthRequest="150" HeightRequest="100">
+                            <Label 
+                                Text=" "
+                                FontSize="48"
+                                HorizontalOptions="Center"/>
+                        </Frame>
+                        <Label 
+                            Text="Белая"
+                            HorizontalOptions="Center"
+                            FontSize="24"
+                            Margin="0,10,0,0"
+                            FontAttributes="Bold"/>
+                        <HorizontalStackLayout HorizontalOptions="Center">
+                            <HorizontalStackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="whiteTapped" />
+                            </HorizontalStackLayout.GestureRecognizers>
+                            <Label 
+                                x:Name="whitestate"
+                                Text="1000"
+                                FontSize="18"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <Frame BackgroundColor="#8973fa" WidthRequest="150" HeightRequest="100">
+                            <Label 
+                                Text=" "
+                                FontSize="48"
+                                HorizontalOptions="Center"/>
+                        </Frame>
+                        <Label 
+                            Text="Синия"
+                            HorizontalOptions="Center"
+                            FontSize="24"
+                            Margin="0,10,0,0"
+                            FontAttributes="Bold"/>
+                        <HorizontalStackLayout HorizontalOptions="Center">
+                            <HorizontalStackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="blueTapped" />
+                            </HorizontalStackLayout.GestureRecognizers>
+                            <Label 
+                                x:Name="bluestate"
+                                Text="1000"
+                                FontSize="18"/>
+                            <Image 
+                                x:Name="bluecoin"
+                                Source="coin.png" 
+                                WidthRequest="20"
+                                VerticalOptions="Center"
+                                Margin="5,0,0,0"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <Frame BackgroundColor="#d94a4a" WidthRequest="150" HeightRequest="100">
+                            <Label 
+                                Text=" "
+                                FontSize="48"
+                                HorizontalOptions="Center"/>
+                        </Frame>
+                        <Label 
+                            Text="Красная"
+                            HorizontalOptions="Center"
+                            FontSize="24"
+                            Margin="0,10,0,0"
+                            FontAttributes="Bold"/>
+                        <HorizontalStackLayout HorizontalOptions="Center">
+                            <HorizontalStackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="redTapped" />
+                            </HorizontalStackLayout.GestureRecognizers>
+                            <Label 
+                                x:Name="redstate"
+                                Text="1000"
+                                FontSize="18"/>
+                            <Image 
+                                x:Name="redcoin"
+                                Source="coin.png" 
+                                WidthRequest="20"
+                                VerticalOptions="Center"
+                                Margin="5,0,0,0"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <Frame BackgroundColor="#c29c2d" WidthRequest="150" HeightRequest="100">
+                            <Label 
+                                Text=" "
+                                FontSize="48"
+                                HorizontalOptions="Center"/>
+                        </Frame>
+                        <Label 
+                            Text="Жёлтая"
+                            HorizontalOptions="Center"
+                            FontSize="24"
+                            Margin="0,10,0,0"
+                            FontAttributes="Bold"/>
+                        <HorizontalStackLayout HorizontalOptions="Center">
+                            <HorizontalStackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="yellowTapped" />
+                            </HorizontalStackLayout.GestureRecognizers>
+                            <Label 
+                                x:Name="yellowstate"
+                                Text="1000"
+                                FontSize="18"/>
+                            <Image 
+                                x:Name="yellowcoin"
+                                Source="coin.png" 
+                                WidthRequest="20"
+                                VerticalOptions="Center"
+                                Margin="5,0,0,0"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <Frame BackgroundColor="#36a12f" WidthRequest="150" HeightRequest="100">
+                            <Label 
+                                Text=" "
+                                FontSize="48"
+                                HorizontalOptions="Center"/>
+                        </Frame>
+                        <Label 
+                            Text="Зелёная"
+                            HorizontalOptions="Center"
+                            FontSize="24"
+                            Margin="0,10,0,0"
+                            FontAttributes="Bold"/>
+                        <HorizontalStackLayout HorizontalOptions="Center">
+                            <HorizontalStackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="greenTapped" />
+                            </HorizontalStackLayout.GestureRecognizers>
+                            <Label 
+                                x:Name="greenstate"
+                                Text="1000"
+                                FontSize="18"/>
+                            <Image 
+                                x:Name="greencoin"
+                                Source="coin.png" 
+                                WidthRequest="20"
+                                VerticalOptions="Center"
+                                Margin="5,0,0,0"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </FlexLayout>
+                <Label />
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Orfograffiti.endgame"
+             Title="endgame">
+    <Grid>
+        <Image 
+            x:Name="fon"
+            Aspect="AspectFill"
+            Source="whitefon.jfif"
+            Opacity="0.5"/>
+        <ScrollView>
+            <VerticalStackLayout>
+                <Label 
+            x:Name="title"
+            Text="ПОРАЖЕНИЕ"
+            HorizontalTextAlignment="Center"
+            FontAttributes="Bold"
+            FontSize="42"
+            Margin="10"/>
+                <HorizontalStackLayout HorizontalOptions="Center" Margin="5">
+                    <Label 
+                Text="Режим:"
+                FontSize="20"
+                FontAttributes="Bold"/>
+                    <Label 
+                x:Name="mode"
+                Text=" Классика"
+                FontSize="20"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    <Label
+                Text="Сложность:"
+                FontSize="20"
+                FontAttributes="Bold"/>
+                    <Label 
+                x:Name="diff"
+                Text=" Легко"
+                FontSize="20"/>
+                </HorizontalStackLayout>
+                <VerticalStackLayout x:Name="container" Margin="0,30,0,0">
+
+                </VerticalStackLayout>
+                <Label
+            x:Name="rewardexp"
+            Text="Награда! 1000 опыта!"
+            HorizontalTextAlignment="Center"
+            FontSize="24"
+            FontAttributes="Bold"
+            Margin="0,30"/>
+                <Label 
+            x:Name="rewardbucoins"
+            Text="Награда! 10 букоинов!"
+            HorizontalTextAlignment="Center"
+            FontSize="24"
+            FontAttributes="Bold"
+            Margin="0,0,0,10"/>
+                <Button 
+            x:Name="back"
+            Text="Вернуться"
+            TextColor="Black"
+            WidthRequest="150"
+            BackgroundColor="MediumAquamarine"
+            BorderColor="Black"
+            BorderWidth="2"
+            Margin="0,25,0,0"
+            Clicked="back_Clicked"/>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

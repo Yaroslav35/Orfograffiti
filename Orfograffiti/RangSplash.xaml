@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Orfograffiti.RangSplash"
+             Title="">
+    <Grid>
+        <Image 
+            x:Name="fon"
+            Aspect="AspectFill"
+            Source="whitefon.jfif"
+            Opacity="0.5"/>
+        <ScrollView x:Name="scroll" IsEnabled="False">
+            <VerticalStackLayout>
+                <Label 
+            x:Name="ultratitle"
+            Text="Новый ранг!"
+            FontSize="30"
+            FontAttributes="Bold"
+            HorizontalTextAlignment="Center"
+            Margin="10,30,10,10" />
+                <Label 
+            x:Name="title"
+            Text="?"
+            Opacity="0"
+            FontSize="30"
+            FontAttributes="Bold"
+            HorizontalTextAlignment="Center"
+            Margin="10,10,10,0"/>
+                <Image 
+                    x:Name="img"
+                    Source="coin.png"
+                    WidthRequest="300"
+                    RotationY="181"
+                    Margin="5,50,5,0"/>
+                <Label 
+            x:Name="subtitle2"
+            Text="Текущий опыт"
+            HorizontalOptions="Center"
+            FontSize="20"
+            FontAttributes="Bold"
+            Margin="25,50,0,0"
+            Opacity="0"/>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

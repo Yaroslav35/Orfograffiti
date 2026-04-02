@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Orfograffiti.achievements"
+             Title="">
+    <Grid>
+        <Image 
+            x:Name="fon"
+            Aspect="AspectFill"
+            Source="whitefon.jfif"
+            Opacity="0.5"/>
+        <ScrollView>
+            <VerticalStackLayout>
+                <Border x:Name="achieve1" Stroke="Black" Margin="10">
+                    <HorizontalStackLayout>
+                        <Frame Margin="10" BorderColor="Black">
+                            <Image 
+                                x:Name="pic1"
+                                Source="unknown.png"
+                                HeightRequest="70"/>
+                        </Frame>
+                        <VerticalStackLayout>
+                            <Label 
+                                Text="Новичок"
+                                FontSize="26"
+                                FontAttributes="Bold"
+                                Margin="0,7,0,0"/>
+                            <Label 
+                                Text="Выиграй 1 игру"
+                                FontSize="16"
+                                Margin="2,5,0,0"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Border>
+                <Border x:Name="achieve2" Stroke="Black" Margin="10">
+                    <HorizontalStackLayout>
+                        <Frame Margin="10" BorderColor="Black">
+                            <Image 
+                                x:Name="pic2"
+                                Source="unknown.png"
+                                HeightRequest="70"/>
+                        </Frame>
+                        <VerticalStackLayout>
+                            <Label 
+                                Text="Продвинутый"
+                                FontSize="26"
+                                FontAttributes="Bold"
+                                Margin="0,7,0,0"/>
+                            <Label 
+                                Text="Выиграй 10 игр"
+                                FontSize="16"
+                                Margin="2,5,0,0"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Border>
+                <Border x:Name="achieve3" Stroke="Black" Margin="10">
+                    <HorizontalStackLayout>
+                        <Frame Margin="10" BorderColor="Black">
+                            <Image 
+                                x:Name="pic3"
+                                Source="unknown.png"
+                                HeightRequest="70"/>
+                        </Frame>
+                        <VerticalStackLayout>
+                            <Label 
+                                Text="Мастер слов"
+                                FontSize="26"
+                                FontAttributes="Bold"
+                                Margin="0,7,0,0"/>
+                            <Label 
+                                Text="Выиграй 100 игр"
+                                FontSize="16"
+                                Margin="2,5,0,0"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Border>
+                <Border x:Name="achieve4" Stroke="Black" Margin="10">
+                    <HorizontalStackLayout>
+                        <Frame Margin="10" BorderColor="Black">
+                            <Image 
+                                x:Name="pic4"
+                                Source="unknown.png"
+                                HeightRequest="70"/>
+                        </Frame>
+                        <VerticalStackLayout>
+                            <Label 
+                                Text="Поражение"
+                                FontSize="26"
+                                FontAttributes="Bold"
+                                Margin="0,7,0,0"/>
+                            <Label 
+                                Text="Проиграй 1 игру"
+                                FontSize="16"
+                                Margin="2,5,0,0"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Border>
+                <Border x:Name="achieve5" Stroke="Black" Margin="10">
+                    <HorizontalStackLayout>
+                        <Frame Margin="10" BorderColor="Black">
+                            <Image 
+                                x:Name="pic5"
+                                Source="unknown.png"
+                                HeightRequest="70"/>
+                        </Frame>
+                        <VerticalStackLayout>
+                            <Label 
+                                Text="Невежда"
+                                FontSize="26"
+                                FontAttributes="Bold"
+                                Margin="0,7,0,0"/>
+                            <Label 
+                                Text="Проиграй 10 игр"
+                                FontSize="16"
+                                Margin="2,5,0,0"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Border>
+                <Border x:Name="achieve6" Stroke="Black" Margin="10">
+                    <HorizontalStackLayout>
+                        <Frame Margin="10" BorderColor="Black">
+                            <Image 
+                                x:Name="pic6"
+                                Source="unknown.png"
+                                HeightRequest="70"/>
+                        </Frame>
+                        <VerticalStackLayout>
+                            <Label 
+                                Text="Нубяра"
+                                FontSize="26"
+                                FontAttributes="Bold"
+                                Margin="0,7,0,0"/>
+                            <Label 
+                                Text="Проиграй 100 игр"
+                                FontSize="16"
+                                Margin="2,5,0,0"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Border>
+                <Border x:Name="achieve7" Stroke="Black" Margin="10">
+                    <HorizontalStackLayout>
+                        <Frame Margin="10" BorderColor="Black">
+                            <Image 
+                                x:Name="pic7"
+                                Source="unknown.png"
+                                HeightRequest="70"/>
+                        </Frame>
+                        <VerticalStackLayout>
+                            <Label 
+                                Text="Вовремя!"
+                                FontSize="26"
+                                FontAttributes="Bold"
+                                Margin="0,7,0,0"/>
+                            <Label 
+                                Text="Выиграй, когда на таймере"
+                                FontSize="16"
+                                Margin="2,5,0,0"/>
+                            <Label 
+                                Text="менее 5 секунд"
+                                FontSize="16"
+                                Margin="2,5,0,0"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Border>
+                <Border x:Name="achieve8" Stroke="Black" Margin="10">
+                    <HorizontalStackLayout>
+                        <Frame Margin="10" BorderColor="Black">
+                            <Image 
+                                x:Name="pic8"
+                                Source="unknown.png"
+                                HeightRequest="70"/>
+                        </Frame>
+                        <VerticalStackLayout>
+                            <Label 
+                                Text="Фижма"
+                                FontSize="26"
+                                FontAttributes="Bold"
+                                Margin="0,7,0,0"/>
+                            <Label 
+                                Text="Какая ещё ФИЖМА!!!"
+                                FontSize="16"
+                                Margin="2,5,0,0"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Border>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Orfograffiti.classicgame"
+             Title="classicgame">
+    <Grid>
+        <Image 
+            x:Name="fon"
+            Aspect="AspectFill"
+            Source="whitefon.jfif"
+            Opacity="0.5"/>
+        <ScrollView x:Name="main">
+            <VerticalStackLayout x:Name="container">
+                <Label 
+            x:Name="title"
+            Text="СЛОЖНОСТЬ"
+            HorizontalTextAlignment="Center"
+            FontSize="26"
+            FontAttributes="Bold"
+            Margin="0,10"/>
+                <Label 
+            x:Name="remaining"
+            Text="Осталось попыток: 0"
+            FontSize="20"
+            HorizontalTextAlignment="Center"/>
+                <HorizontalStackLayout x:Name="timecontainer" HorizontalOptions="Center" Margin="0,10" IsVisible="False">
+                    <Image Source="clockico.png" WidthRequest="30"/>
+                    <Label 
+                        x:Name="timer"
+                        Text="10:00"
+                        FontSize="22"
+                        Margin="10,0,0,0"/>
+                </HorizontalStackLayout>
+                <FlexLayout x:Name="lettersbox" Direction="Row" JustifyContent="SpaceAround" Wrap="Wrap" Margin="10">
+
+                </FlexLayout>
+
+                <Button 
+            x:Name="check"
+            Text="Проверить"
+            WidthRequest="150"
+            Margin="0,15"
+            BackgroundColor="MediumAquamarine"
+            TextColor="Black"
+            BorderColor="Black"
+            BorderWidth="2"
+            Clicked="check_Clicked"/>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

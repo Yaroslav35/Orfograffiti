@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Orfograffiti.rules"
+             Title="">
+    <Grid>
+        <Image 
+             x:Name="fon"
+             Aspect="AspectFill"
+             Source="whitefon.jfif"
+             Opacity="0.5"/>
+        <ScrollView>
+            <VerticalStackLayout>
+                <FlexLayout Direction="Row" JustifyContent="SpaceAround" Wrap="Wrap">
+                    <Frame x:Name="rule1" Margin="15" BorderColor="Black" BackgroundColor="#dddddd" WidthRequest="350">
+                        <VerticalStackLayout>
+                            <Label 
+                        Text="1. В начале раунда открываются случайные буквы (их кол-во зависит от сложности)"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center"/>
+                            <Image 
+                        Source="rule1.png"
+                        WidthRequest="300"
+                        Margin="0,10,0,0"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                    <Frame x:Name="rule2" Margin="15" BorderColor="Black" BackgroundColor="#dddddd" WidthRequest="350">
+                        <VerticalStackLayout>
+                            <Label 
+                        Text="2. Введите предполагаемое слово в заготовку, и угаданные буквы откроются во всех словах"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center"/>
+                            <Image 
+                        Source="rule2.png"
+                        WidthRequest="300"
+                        Margin="0,10,0,0"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                    <Frame x:Name="rule3" Margin="15" BorderColor="Black" BackgroundColor="#dddddd" WidthRequest="350">
+                        <VerticalStackLayout>
+                            <Label 
+                        Text="3. Игра заканчивается когда все слова будут отгаданы или не закончатся попытки"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center"/>
+                            <Image 
+                        Source="rule3.png"
+                        WidthRequest="300"
+                        Margin="0,35,0,0"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </FlexLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Orfograffiti.ranged"
+             Title="">
+    <Grid>
+        <Image 
+            x:Name="fon"
+            Aspect="AspectFill"
+            Source="whitefon.jfif"
+            Opacity="0.5"/>
+        <ScrollView SizeChanged="ScrollView_SizeChanged">
+            <VerticalStackLayout>
+                <Label 
+            Text="Текущий ранг"
+            FontSize="32"
+            FontAttributes="Bold"
+            Margin="15,10,0,0"/>
+                <Border x:Name="mainrang" Stroke="Black" Background="#dddddd" Margin="10">
+                    <HorizontalStackLayout Margin="10">
+                        <Image 
+                    x:Name="ico"
+                    Source="woodtrophy.png"
+                    HeightRequest="100" />
+                        <VerticalStackLayout>
+                            <Label
+                        x:Name="title"
+                        Text="Деревянный ранг"
+                        FontSize="28"
+                        FontAttributes="Bold"
+                        Margin="20,0,0,0"/>
+                            <Label 
+                        x:Name="explbl"
+                        Text="Опыт: 0/10000"
+                        FontSize="20"
+                        FontAttributes="Italic"
+                        Margin="20,5,0,0"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Border>
+                <Label 
+            Text="Список рангов"
+            FontSize="32"
+            FontAttributes="Bold"
+            Margin="15,30,0,0"/>
+                <Border x:Name="brang1" Stroke="Black" Background="#dddddd" Margin="10">
+                    <HorizontalStackLayout Margin="10">
+                        <Image 
+                    Source="woodtrophy.png"
+                    HeightRequest="100" />
+                        <VerticalStackLayout>
+                            <Label
+                        x:Name="rang1"
+                        Text="Деревянный ранг"
+                        FontSize="28"
+                        FontAttributes="Bold"
+                        Margin="20,0,0,0"/>
+                            <Label 
+                        x:Name="rang1exp"
+                        Text="Опыт: 0"
+                        FontSize="20"
+                        FontAttributes="Italic"
+                        Margin="20,5,0,0"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Border>
+                <Border x:Name="brang2" Stroke="Black" Background="#dddddd" Margin="10">
+                    <HorizontalStackLayout Margin="10">
+                        <Image 
+                    Source="irontrophy.png"
+                    HeightRequest="100" />
+                        <VerticalStackLayout>
+                            <Label
+                        x:Name="rang2"
+                        Text="Железный ранг"
+                        FontSize="28"
+                        FontAttributes="Bold"
+                        Margin="20,0,0,0"/>
+                            <Label 
+                        x:Name="rang2exp"
+                        Text="Опыт: 5000"
+                        FontSize="20"
+                        FontAttributes="Italic"
+                        Margin="20,5,0,0"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Border>
+                <Border x:Name="brang3" Stroke="Black" Background="#dddddd" Margin="10">
+                    <HorizontalStackLayout Margin="10">
+                        <Image 
+                    Source="coppertrophy.png"
+                    HeightRequest="100" />
+                        <VerticalStackLayout>
+                            <Label
+                        x:Name="rang3"
+                        Text="Бронзовый ранг"
+                        FontSize="28"
+                        FontAttributes="Bold"
+                        Margin="20,0,0,0"/>
+                            <Label 
+                        x:Name="rang3exp"
+                        Text="Опыт: 12000"
+                        FontSize="20"
+                        FontAttributes="Italic"
+                        Margin="20,5,0,0"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Border>
+                <Border x:Name="brang4" Stroke="Black" Background="#dddddd" Margin="10">
+                    <HorizontalStackLayout Margin="10">
+                        <Image 
+                    Source="silvertrophy.png"
+                    HeightRequest="100" />
+                        <VerticalStackLayout>
+                            <Label
+                        x:Name="rang4"
+                        Text="Серебряный ранг"
+                        FontSize="28"
+                        FontAttributes="Bold"
+                        Margin="20,0,0,0"/>
+                            <Label 
+                        x:Name="rang4exp"
+                        Text="Опыт: 25000"
+                        FontSize="20"
+                        FontAttributes="Italic"
+                        Margin="20,5,0,0"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Border>
+                <Border x:Name="brang5" Stroke="Black" Background="#dddddd" Margin="10">
+                    <HorizontalStackLayout Margin="10">
+                        <Image 
+                    Source="goldtrophy.png"
+                    HeightRequest="100" />
+                        <VerticalStackLayout>
+                            <Label
+                        x:Name="rang5"
+                        Text="Золотой ранг"
+                        FontSize="28"
+                        FontAttributes="Bold"
+                        Margin="20,0,0,0"/>
+                            <Label 
+                        x:Name="rang5exp"
+                        Text="Опыт: 40000"
+                        FontSize="20"
+                        FontAttributes="Italic"
+                        Margin="20,5,0,0"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Border>
+                <Border x:Name="brang6" Stroke="Black" Background="#dddddd" Margin="10">
+                    <HorizontalStackLayout Margin="10">
+                        <Image 
+                    Source="emeraldtrophy.png"
+                    HeightRequest="100" />
+                        <VerticalStackLayout>
+                            <Label
+                        x:Name="rang6"
+                        Text="Изумрудный ранг"
+                        FontSize="28"
+                        FontAttributes="Bold"
+                        Margin="20,0,0,0"/>
+                            <Label 
+                        x:Name="rang6exp"
+                        Text="Опыт: 60000"
+                        FontSize="20"
+                        FontAttributes="Italic"
+                        Margin="20,5,0,0"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Border>
+                <Border x:Name="brang7" Stroke="Black" Background="#dddddd" Margin="10">
+                    <HorizontalStackLayout Margin="10">
+                        <Image 
+                    Source="rubintrophy.png"
+                    HeightRequest="100" />
+                        <VerticalStackLayout>
+                            <Label
+                        x:Name="rang7"
+                        Text="Рубиновый ранг"
+                        FontSize="28"
+                        FontAttributes="Bold"
+                        Margin="20,0,0,0"/>
+                            <Label 
+                        x:Name="rang7exp"
+                        Text="Опыт: 90000"
+                        FontSize="20"
+                        FontAttributes="Italic"
+                        Margin="20,5,0,0"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Border>
+                <Border x:Name="brang8" Stroke="Black" Background="#dddddd" Margin="10">
+                    <HorizontalStackLayout Margin="10">
+                        <Image 
+                    Source="neontrophy.png"
+                    HeightRequest="100" />
+                        <VerticalStackLayout>
+                            <Label
+                        x:Name="rang8"
+                        Text="Неоновый ранг"
+                        FontSize="28"
+                        FontAttributes="Bold"
+                        Margin="20,0,0,0"/>
+                            <Label 
+                        x:Name="rang8exp"
+                        Text="Опыт: 130000"
+                        FontSize="20"
+                        FontAttributes="Italic"
+                        Margin="20,5,0,0"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Border>
+                <VerticalStackLayout x:Name="prestigebox" IsVisible="False">
+                    <Label 
+                Text="ПРЕСТИЖ"
+                FontSize="32"
+                FontAttributes="Bold"
+                Margin="15,10,0,0"/>
+                    <Border Stroke="Black" Margin="10">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                <GradientStop Color="#fef5ff" Offset="0"/>
+                                <GradientStop Color="#fbe3fc" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <HorizontalStackLayout>
+                            <Grid WidthRequest="100" HeightRequest="100" Margin="10">
+                                <Image 
+                            Source="prestigetrophy.png"/>
+                            </Grid>
+                            <VerticalStackLayout>
+                                <Label
+                            x:Name="rang9"
+                            Text="Престиж"
+                            FontSize="28"
+                            FontAttributes="Bold"
+                            Margin="5,15,0,0"/>
+                                <Label 
+                            x:Name="rang9exp"
+                            Text="Опыт: 200000+"
+                            FontSize="20"
+                            FontAttributes="Italic"
+                            Margin="5,5,0,0"/>
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>
+                    </Border>
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Orfograffiti.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Orfograffiti"
+    Title="Orfograffiti">
+
+    <TabBar x:Name="tapbar">
+        <Tab Title="Главная" Icon="letterico.png">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+        </Tab>
+        <Tab Title="Магазин" Icon="shopico.png">
+            <ShellContent ContentTemplate="{DataTemplate local:shop}"/>
+        </Tab>
+        <Tab Title="Рейтинг" Icon="rangedico.png">
+            <ShellContent ContentTemplate="{DataTemplate local:ranged}"/>
+        </Tab>
+        <Tab Title="Достижения" Icon="achieveico.png">
+            <ShellContent ContentTemplate="{DataTemplate local:achievements}"/>
+        </Tab>
+        <Tab Title="Правила" Icon="ruleico.png">
+            <ShellContent ContentTemplate="{DataTemplate local:rules}"/>
+        </Tab>
+        <Tab Title="Настройки" Icon="settingsico.png">
+            <ShellContent ContentTemplate="{DataTemplate local:settings}"/>
+        </Tab>
+    </TabBar>
+
+</Shell>
