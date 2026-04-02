@@ -111,7 +111,7 @@
 
 ### Клонирование и сборка
 
-git clone https://github.com/yourusername/Orfograffiti.git
+git clone https://github.com/Yaroslav35/Orfograffiti.git
 cd Orfograffiti
 dotnet restore
 dotnet build
